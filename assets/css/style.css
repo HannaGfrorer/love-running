@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 * {
     margin: 0;
@@ -9,10 +9,10 @@
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
-    color: #252525;
+    color: #3a3a3a;
 }
 
-
+/* headings and logo */
 
 h1, h2 {
     font-family: Oswald, sans-serif;
@@ -21,53 +21,54 @@ h1, h2 {
     color: #252525;
 }
 
-    
 #logo {
     float: left;
     font-size: 280%;
     margin-left: 30px;
 }
 
+/* navigation links */
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
-
 }
 
-#menu li {
-    line-height: 75%;
+#menu, #logo {
+    line-height: 75px;
 }
 
 #menu li {
     float: right;
     list-style-type: none;
     margin-right: 30px;
-
 }
+
 #menu a {
     text-decoration: none;
     color: inherit;
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 .active {
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image*/
+/* hero image and cover text */
 
 #hero-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
 
-    position:relative
+    position: relative;
 }
+
 #cover-text, #cover-text h2 {
-    color: #ffff;
+    color: #fff;
 }
 
 #hero-image {
@@ -75,21 +76,22 @@ h1, h2 {
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
 
-/* creates zoom effect on loading page */
-animation-name: hero-zoom;
-animation-duration: 5s;
-animation-fill-mode: forwards;
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
 /* creates the level of zoom for hero image */
 @keyframes hero-zoom {
-    from {
+    from{
         transform: scale(1);
     }
-    to {
+    to{
         transform: scale(1.1);
     }
 }
+
 #cover-text {
     font-size: 130%;
     font-family: Oswald, sans-serif;
@@ -109,36 +111,34 @@ animation-fill-mode: forwards;
 
     position: absolute;
 }
-/*  club ethos */
+
+/* club ethos */
+
 #club-ethos {
     height: 600px;
 }
+
 #left-about {
     padding-top: 30px;
     width: 33%;
     float: left;
-    
 }
 
 #right-about {
     padding-top: 30px;
     width: 33%;
     float: right;
-    
 }
+
 #center-about {
     width: 33%;
     margin: 0 auto;
-   
 }
-.right-about-heading {
 
-}
 hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
     margin: 5px 0;
-
 }
 
 .left-about-heading {
@@ -148,11 +148,29 @@ hr {
     clear: both;
     margin-bottom: 50px;
 }
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
+
 #welcome {
     text-align: center;
     margin: 20px 0;
     font-size: 280%;
 }
+
 #circle-container {
     width: 300px;
     height: 300px;
@@ -162,4 +180,10 @@ hr {
     border-width: 1px;
     border-radius: 50%;
     margin: 0 auto;
+}
+
+#circle-cover-bg {
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
 }
