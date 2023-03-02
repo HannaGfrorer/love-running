@@ -252,7 +252,7 @@ footer {
         float: left;
         padding: 0;
     }
-    3center-about {
+    #center-about {
         clear: both;
         width: 100%;
        float: left;
@@ -262,4 +262,32 @@ footer {
     hr {
         display: none;
     }
+}
+/* for mideum sizes sccrens */
+@media screen and (max-width: 950px) {
+    #menu {
+        clear: left;
+        float: right;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+    #cover-text {
+        left: 0;
+    }
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    .left-about-heading, .right-about-heading {
+        width: inherit;
+    }
+    .left-about-heading h2, .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .left-about-heading p, .right-about-heading p {
+        text-align: center;
+        padding: 20px;
 }
