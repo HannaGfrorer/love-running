@@ -297,3 +297,14 @@ footer {
         text-align: center;
         padding: 20px;
 }
+#photos {
+    column-count: 3;
+}
+}
+@media screen and (max-width: 800p) {
+    #photos {
+        column-count: 2;
+    }
+
+    
+}
